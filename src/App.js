@@ -16,8 +16,9 @@ function App() {
     <div className="App">
     <CartProvider>
         <NavBar />
+        <Product/>
       <Routes>
-        <Route  path="/" element={<Product/>} />
+        {/* <Route  path="/" element={<Product/>} /> */}
         <Route  path="/product/:id" element={<DescProduct/>}/>
         <Route  path="/cart" element={<Cart/>} /> 
       </Routes>
